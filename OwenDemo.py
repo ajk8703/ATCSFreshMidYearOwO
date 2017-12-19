@@ -6,4 +6,3 @@ class Person (Object):
         self.age = age
 
 def main():
-    Owen
