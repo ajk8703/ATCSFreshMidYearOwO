@@ -1,6 +1,6 @@
 import discord
 import asyncio
-
+import random
 from cute_chat import cutechat
 
 #we will remove the #'s when youtube and games work
