@@ -5,3 +5,8 @@
 5) create games that can be started through that user input (mini games)
 6) play audio from youtube videos in a voice channel and save users' fav videos
 7) revise and make more user friendly.
+
+
+NOTES:
+
+    @self.client.event      when the user does stuff

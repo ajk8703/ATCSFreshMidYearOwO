@@ -1,1 +1,2 @@
-print ("comp sci")
+import discord
+import asyncio
