@@ -1,4 +1,2 @@
-client secret: shSShr9DUfMXwEgqv7sKvRH2OzgPiAg_
-client id: 399985848721997834
-client token: Mzk5OTg1ODQ4NzIxOTk3ODM0.DTVEkQ.XxVl1EqNz7ajozJrjJeRtu7gRE4
-client username: Username: OwO#5090
+token Mzk5OTg1ODQ4NzIxOTk3ODM0.DTVDcA.7T0LiBlo5aaq7MQXWclQ6lJTzPw
+client id 399985848721997834 

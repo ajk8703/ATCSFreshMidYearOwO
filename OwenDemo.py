@@ -1,8 +1,33 @@
-print("Hello World")
+import discord
+import asyncio
+from cute_chat import cutechat
 
-class Person (Object):
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+#we will remove the #'s when youtube and games work
+#from youtube_chat import youtube_chat
+#from games_chat import games_chat
 
-def main():
+client = discord.Client()
+cutechat = cutechat(client)
+
+
+
+
+@client.event
+async def on_ready():
+    print('Logged in as')
+    print(client.user.name)
+    print(client.user.id)
+    print('------')
+
+cutechat.run()
+
+#we will remove the #'s when youtube and games work
+#youtube_chat.run()
+#games_chat.run()
+
+
+
+
+
+
+client.run('Mzk5OTg1ODQ4NzIxOTk3ODM0.DTVDcA.7T0LiBlo5aaq7MQXWclQ6lJTzPw')
