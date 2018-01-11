@@ -1,7 +1,7 @@
 import discord
 import asyncio
 from discord.ext import commands
-bot = commands.Bot(command_prefix='!', description='Auyyyyyyyyyyyye')
+bot = commands.Bot(command_prefix='!', description='Auyyyyyyyyye')
 
 @bot.event
 
