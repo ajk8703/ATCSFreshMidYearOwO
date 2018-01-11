@@ -1,0 +1,12 @@
+1) make the discord bot itself
+2) user input from discord chat (include list of actions)
+3) OwOfy user input (make 'l' and 'r' swap with 'w') eg. hi friend = hi fwiend
+4) create / paste cute pictures with the text input command
+5) create games that can be started through that user input (mini games)
+6) play audio from youtube videos in a voice channel and save users' fav videos
+7) revise and make more user friendly.
+
+
+NOTES:
+
+    @self.client.event      when the user does stuff
