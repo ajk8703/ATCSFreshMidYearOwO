@@ -1,7 +1,7 @@
 import discord
 import asyncio
 from discord.ext import commands
-bot = commands.Bot(command_prefix='aj!', description='Auyyyyyyyyye')
+bot = commands.Bot(command_prefix='a!', description='Auyyyyyyyyye')
 
 @bot.event
 
@@ -12,11 +12,25 @@ async def on_ready():
 
 @bot.command()
 async def hello():
-    await bot.say("Hello")
+    await bot.say("no")
+
+@bot.command()
+async def ving():
+    await bot.say("Hi! How are you?")
+
+@bot.command()
+async def say(something):
+    await bot.say(something)
+
+"""
+@client.event
+async def
+
 
 
 @bot.listen()
 async def
+"""
 
 
 
