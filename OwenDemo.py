@@ -2,6 +2,7 @@ import discord
 import asyncio
 
 from cute_chat import cutechat
+from games_chat import games_chat
 
 #we will remove the #'s when youtube and games work
 #from youtube_chat import youtube_chat
@@ -9,8 +10,7 @@ from cute_chat import cutechat
 
 client = discord.Client()
 cutechat = cutechat(client)
-
-
+games_chat = games_chat(client)
 
 
 @client.event
@@ -21,6 +21,7 @@ async def on_ready():
     print('------')
 
 cutechat.run()
+games_chat.run()
 
 #we will remove the #'s when youtube and games work
 #youtube_chat.run()
