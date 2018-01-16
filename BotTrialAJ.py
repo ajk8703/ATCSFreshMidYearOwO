@@ -1,8 +1,13 @@
 import discord
 import asyncio
 from discord.ext import commands
-bot = commands.Bot(command_prefix='a!', description='Auyyyyyyyyye')
 
+"""
+class Talk(object):
+    def 
+"""
+bot = commands.Bot(command_prefix='.', description='Auyyyyyyyyye')
+client = discord.Client()
 @bot.event
 
 async def on_ready():
@@ -18,22 +23,10 @@ async def hello():
 async def ving():
     await bot.say("Hi! How are you?")
 
-@bot.command()
-async def say(something):
-    await bot.say(something)
-
-"""
-@client.event
-async def
-
-
-
-@bot.listen()
-async def
-"""
-
 
 
 
 bot.run("NDAwNzA3NTQxODQ5NjA0MDk2.DTfj9w.fJ9ztMwA7NTFuiiyJXv0Tdvwzn4")
 
+
+"""keyboardsmashfeature"""
