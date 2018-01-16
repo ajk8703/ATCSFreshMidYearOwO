@@ -19,8 +19,12 @@ class ting(object):
 
 
     @bot.command()
-    async def hello(self):
-        await self.bot.say("no")
+    async def talk(self):
+        await self.bot.say("""
+        You can talk to me! Here are the commands you can use with me!
+        
+        .talk -- tell me anything!
+        .""")
 
     @bot.command()
     async def ving(self):
