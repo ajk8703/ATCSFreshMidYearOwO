@@ -23,6 +23,21 @@ async def hello():
 async def ving():
     await bot.say("Hi! How are you?")
 
+@client.event
+async def on_message(message):
+    if message.content.startswith(".imsad"):
+        await client.send_message(message.channel, 'awwww tell me why!')
+
+
+"""
+@client.event
+async def on_message(message):
+        # read the message that is sent.
+    if message.content():
+        await client.send_message(message.channel, 'Pong!')
+                                        # tells you to send it to the channel that the message was sent into
+"""
+
 
 
 
