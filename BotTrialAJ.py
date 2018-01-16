@@ -2,30 +2,34 @@ import discord
 import asyncio
 from discord.ext import commands
 
-"""
-class Talk(object):
-    def 
-"""
-bot = commands.Bot(command_prefix='.', description='Auyyyyyyyyye')
 client = discord.Client()
-@bot.event
-
-async def on_ready():
-    print ("Logged in as")
-    print(bot.user.name)
 
 
-@bot.command()
-async def hello():
-    await bot.say("no")
+class ting(object):
+    """
+    class Talk(object):
+        def
+    """
+    bot = commands.Bot(command_prefix='.', description='Auyyyyyyyyye')
+    @bot.event
 
-@bot.command()
-async def ving():
-    await bot.say("Hi! How are you?")
+    async def on_ready(self):
+        print ("Logged in as")
+        print(self.bot.user.name)
+
+
+    @bot.command()
+    async def hello(self):
+        await self.bot.say("no")
+
+    @bot.command()
+    async def ving(self):
+        await self.bot.say("Hi! How are you?")
+
 
 @client.event
 async def on_message(message):
-    if message.content.startswith(".imsad"):
+    if message.content.startswith("!asd"):
         await client.send_message(message.channel, 'awwww tell me why!')
 
 
