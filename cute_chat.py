@@ -1,22 +1,46 @@
-
+import discord
+import asyncio
 import random
-class cutechat (object):
 
-    def __init__(self, client):
-        self.client = client
 
-    def run(self):
-       @self.client.event
-       async def on_message(message):
-        if message.content.startswith('!ping'):
-            await self.client.send_message(message.channel, 'Pong!')
-        elif message.content.startswith("!randomcute"):
+#we will remove the #'s when youtube and games work
+#from youtube_chat import youtube_chat
+#from games_chat import games_chat
 
-            image_file = open("images")
+client = discord.Client()
+
+
+@client.event
+async def on_message(message):
+
+        if message.content.startswith('!randomcute'):
+
+            imagefile = open("images")
             imlist = []
-            for line in image_file:
+            for line in imagefile:
                 imlist.append(line)
+            use = imlist[random.randint(0, len(imlist))]
 
-            randlink = imlist[random.randint(0, len(imlist))]
+            await client.send_message(message.channel,use)
 
-            await self.client.send_message(message.channel, randlink)
+
+@client.event
+async def on_ready():
+    print('Logged in as')
+    print(client.user.name)
+    print(client.user.id)
+    print('------')
+
+
+
+
+#we will remove the #'s when youtube and games work
+#youtube_chat.run()
+#games_chat.run()
+
+
+
+
+
+
+client.run('Mzk5OTg1ODQ4NzIxOTk3ODM0.DTVDcA.7T0LiBlo5aaq7MQXWclQ6lJTzPw')
