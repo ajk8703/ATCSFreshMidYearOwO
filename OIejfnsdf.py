@@ -4,22 +4,20 @@ from discord.ext import commands
 bot = commands.Bot(command_prefix='smash', description='Auyyyyyyyyye')
 
 
+alpha = open("Alphabet", "r")
+meep = []
+for x in alpha:
+    meep.append(x)
+
 @bot.event
 async def on_ready(self):
     print ("Logged in as")
     print(self.bot.user.name)
 
 @bot.command()
-async def hello():
-    await bot.say("hello!")
-
-@bot.command()
 async def say(something):
-    await bot.say(something)
+    something = int(something)
 
-@bot.command()
-async def ving(self):
-    await bot.say("Hi! How are you?")
 
 
 
