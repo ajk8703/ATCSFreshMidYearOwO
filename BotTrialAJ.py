@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-bot = commands.Bot(command_prefix='smash', description='Auyyyyyyyyye')
+bot = commands.Bot(command_prefix='+', description='Auyyyyyyyyye')
 
 
 @bot.event
@@ -11,13 +11,6 @@ async def on_ready(self):
 @bot.command()
 async def hello():
     await bot.say("hello!")
-
-@bot.command()
-async def say(something):
-    await bot.say(
-        for
-
-    )
 
 @bot.command()
 async def ving():
