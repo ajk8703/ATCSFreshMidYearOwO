@@ -27,7 +27,7 @@ async def u(something):
         i = random.choice(meep)
         ergh += i
 
-    await bot.say(ergh)
+    await bot.say((ergh).upper())
 
 
 @bot.command()
@@ -43,7 +43,29 @@ async def l(something):
     await bot.say((ergh).lower())
 
 
+@bot.command()
+async def a(something):
+    something = int(something)
+    if something > 2000:
+        await bot.say("Heyyyy calm down there")
+    ergh = ""
+    for i in range(something):
+        i = random.choice(meep)
+        ergh += i
 
+    await bot.say(ergh)
+
+"""
+import random
+import string
+
+def command(x):
+    keylist = [random.choice(string.ascii_letters) for i in range(x)]
+    return ("".join(keylist))
+
+print(command(5))
+
+"""
 """
 @client.event
 async def on_message(message):
