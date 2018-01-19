@@ -16,15 +16,15 @@ class Criminal (object):
 
             elif self.mode == 1:
 
-                if message.content.startswith("!gardener"):
+                if message.content.startswith("1"):
                     player = 0
-                elif message.content.startswith("!butcher"):
+                elif message.content.startswith("2"):
                     player = 0
-                elif message.content.startswith("!butler"):
-                    player = "butler"
+                elif message.content.startswith("3"):
+                    player = 1
 
                 if player == "butler":
-                    await self.client.send_message(message.channel, 'Correct! The house has NO corners!')
+                    await self.client.send_message(message.channel, 'Correct!')
                 else:
                     await self.client.send_message(message.channel, 'Wrong!')
 
