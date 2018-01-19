@@ -1,11 +1,11 @@
-#this will handle youtube interactions
 import discord
 import asyncio
 
-
+from Criminal import Criminal
 
 client = discord.Client()
 
+Criminal = Criminal(client)
 
 @client.event
 async def on_ready():
@@ -14,11 +14,6 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
+Criminal.run()
 
-
-
-
-
-
-
-client.run('Mzk5OTg1ODQ4NzIxOTk3ODM0.DTVDcA.7T0LiBlo5aaq7MQXWclQ6lJTzPw')
+client.run('NDAxMDgzMDkwNTI2Nzk3ODM2.DTlBiA.rCG3a-d581NCsyFQw75_8RYBJ_M')
