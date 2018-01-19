@@ -5,17 +5,19 @@ import random
 bot = commands.Bot(command_prefix='smash', description='Auyyyyyyyyye')
 
 alpha = open("Alphabet", "r")
-alphaplus = open("morethanalphabet", "r")
-meep = ""
 bean = ""
+meep = ""
 for x in alpha:
     x = x.strip("\n")
     meep += x
     bean += x
-for r in alphaplus:
-    r = r.strip("\n")
-    bean += r
 
+num = open("morethanalphabet", "r")
+numlist = ""
+for t in num:
+    t = t.strip("\n")
+    numlist += t
+    bean += t
 
 
 @bot.event
@@ -49,21 +51,9 @@ async def l(something):
 
     await bot.say((ergh).lower())
 
-@bot.command()
-async def a(something):
-    something = int(something)
-    if something > 2000:
-        await bot.say("Heyyyy calm down there")
-    ergh = ""
-    for i in range(something):
-        i = random.choice(bean)
-        ergh += i
-
-    await bot.say(ergh)
-
 
 @bot.command()
-async def a(something):
+async def b(something):
     something = int(something)
     if something > 2000:
         await bot.say("Heyyyy calm down there")
@@ -73,6 +63,18 @@ async def a(something):
         ergh += i
 
     await bot.say(ergh)
+
+
+@bot.command()
+async def e(anything):
+    anything = int(anything)
+    ergh = ""
+    for i in range(anything):
+        i = random.choice(bean)
+        ergh += i
+
+    await bot.say(ergh)
+
 
 """
 import random
@@ -93,6 +95,7 @@ async def on_message(message):
         await client.send_message(message.channel, 'Pong!')
                                         # tells you to send it to the channel that the message was sent into
 """
+
 
 bot.run("NDAwNzA3NTQxODQ5NjA0MDk2.DTfj9w.fJ9ztMwA7NTFuiiyJXv0Tdvwzn4")
 
