@@ -1,11 +1,11 @@
 import discord
 import asyncio
 
-from  import
+from Criminal import Criminal
 
 client = discord.Client()
 
- = (client)
+Criminal = Criminal(client)
 
 @client.event
 async def on_ready():
@@ -14,6 +14,6 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-.run()
+Criminal.run()
 
 client.run('NDAxMDgzMDkwNTI2Nzk3ODM2.DTlBiA.rCG3a-d581NCsyFQw75_8RYBJ_M')
