@@ -64,7 +64,6 @@ async def b(something):
 
     await bot.say(ergh)
 
-
 @bot.command()
 async def e(anything):
     anything = int(anything)
