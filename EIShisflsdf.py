@@ -5,10 +5,17 @@ import random
 bot = commands.Bot(command_prefix='smash', description='Auyyyyyyyyye')
 
 alpha = open("Alphabet", "r")
+alphaplus = open("morethanalphabet", "r")
 meep = ""
+bean = ""
 for x in alpha:
     x = x.strip("\n")
     meep += x
+    bean += x
+for r in alphaplus:
+    r = r.strip("\n")
+    bean += r
+
 
 
 @bot.event
@@ -41,6 +48,18 @@ async def l(something):
         ergh += i
 
     await bot.say((ergh).lower())
+
+@bot.command()
+async def a(something):
+    something = int(something)
+    if something > 2000:
+        await bot.say("Heyyyy calm down there")
+    ergh = ""
+    for i in range(something):
+        i = random.choice(bean)
+        ergh += i
+
+    await bot.say(ergh)
 
 
 @bot.command()
