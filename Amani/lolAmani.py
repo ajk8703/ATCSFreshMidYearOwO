@@ -1,7 +1,6 @@
 import discord
-import asyncio
 
-from Criminal import Criminal
+from Amani.Criminal import Criminal
 
 client = discord.Client()
 

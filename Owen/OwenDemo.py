@@ -1,8 +1,6 @@
 import discord
-import asyncio
 
-
-from games_chat import games_chat
+from Owen.games_chat import games_chat
 
 #we will remove the #'s when youtube and games work
 #from youtube_chat import youtube_chat

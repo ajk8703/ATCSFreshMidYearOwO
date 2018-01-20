@@ -75,26 +75,9 @@ async def e(anything):
     await bot.say(ergh)
 
 
-"""
-import random
-import string
-
-def command(x):
-    keylist = [random.choice(string.ascii_letters) for i in range(x)]
-    return ("".join(keylist))
-
-print(command(5))
-
-"""
-"""
-@client.event
-async def on_message(message):
-        # read the message that is sent.
-    if message.content():
-        await client.send_message(message.channel, 'Pong!')
-                                        # tells you to send it to the channel that the message was sent into
-"""
+@bot.command()
+async def halp():
+    await bot.say("Type \"smashu\" for an uppercase keyboard smash.\nType \"smashl\" for a lowercase keyboard smash.\nType \"smashb\" for an allcase keyboard smash.\nType \"smashe\" for an EVERYTHING keyboard smash. :3")
 
 
 bot.run("NDAwNzA3NTQxODQ5NjA0MDk2.DTfj9w.fJ9ztMwA7NTFuiiyJXv0Tdvwzn4")
-
