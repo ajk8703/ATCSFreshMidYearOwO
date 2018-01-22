@@ -52,8 +52,9 @@ async def AJ():
         %s
         %s
         %s
+        %s
         
-        """ % ("#A.J. dislikes:", "Food", "Biology", "Hugs", "Homework", "Bananya", "Scary Movies", "Hedgehogs", "Otters", "Sherlock", "Macarons", "Harry Potter"))
+        """ % ("#A.J. dislikes:", "Food", "Biology", "Hugs", "Homework", "Bananya", "Scary Movies", "Hedgehogs", "Otters", "Sherlock", "Macarons", "Harry Potter", "Mr. Respass"))
         
 
 
