@@ -17,7 +17,10 @@ async def on_message(message):
                 await client.send_message(message.channel, "")
             if message.content.startswith('=murder2'):
                 await client.send_message(message.channel, "")
-            if message
+            if message.content.startswith("=murder3"):
+                await client.send_message(message.channel, "")
+
+
 
 
 client.run("NDAwNzA3NTQxODQ5NjA0MDk2.DTfj9w.fJ9ztMwA7NTFuiiyJXv0Tdvwzn4")

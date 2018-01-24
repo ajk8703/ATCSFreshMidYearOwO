@@ -13,7 +13,7 @@ async def Owen():
         %s
         %s
         
-        """ % ("#Owen dislikes:", "like", "dislike", "like", "dislike", "like", "dislike", "like", "like"))
+        """ % ("#Owen dislikes:", "Food", "dislike", "like", "dislike", "like", "dislike", "like", "like"))
 
 @bot.command()
 async def Vignesh():
@@ -54,7 +54,7 @@ async def AJ():
         %s
         %s
         
-        """ % ("#A.J. dislikes:", "Food", "Biology", "Hugs", "Homework", "Bananya", "Scary Movies", "Hedgehogs", "Otters", "Sherlock", "Macarons", "Harry Potter", "Mr. Respass"))
+        """ % ("#A.J. dislikes:", "Food", "Biology", "Hugs", "Homework", "Bananya", "Scary Movies", "Hedgehogs", "Otters", "Sherlock", "Macarons", "Harry Potter", "Hitting People"))
         
 
 
