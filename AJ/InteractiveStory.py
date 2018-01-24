@@ -14,7 +14,9 @@ async def on_message(message):
             (=murder2) Duck under your covers for safety and stay as quiet as possible
             (=murder3) Crawl out the window""")
             if message.content.startswith('=murder1'):
-                await client.send_message(message.channel, "")
+                await client.send_message(message.channel, "You decide to be courageous...")
+                time.sleep(1)
+                await client.send_message(message.channel, "You")
             if message.content.startswith('=murder2'):
                 await client.send_message(message.channel, "")
             if message.content.startswith("=murder3"):
