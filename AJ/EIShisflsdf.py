@@ -80,4 +80,4 @@ async def halp():
     await bot.say("Type \"smashu\" for an uppercase keyboard smash.\nType \"smashl\" for a lowercase keyboard smash.\nType \"smashb\" for an allcase keyboard smash.\nType \"smashe\" for an EVERYTHING keyboard smash. :3")
 
 
-bot.run("NDAwNzA3NTQxODQ5NjA0MDk2.DTfj9w.fJ9ztMwA7NTFuiiyJXv0Tdvwzn4")
+bot.run("Mzk5OTg1ODQ4NzIxOTk3ODM0.DTVDcA.7T0LiBlo5aaq7MQXWclQ6lJTzPw")
