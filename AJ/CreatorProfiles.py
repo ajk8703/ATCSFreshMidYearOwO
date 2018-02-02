@@ -4,7 +4,7 @@
 import discord
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix = ".#")
+bot = commands.Bot(command_prefix = ".#", description="Wanna meet the creators of me, this awesome bot? The prefix you need to get started is \".#\"")
 
 @bot.command()
 async def Owen():
